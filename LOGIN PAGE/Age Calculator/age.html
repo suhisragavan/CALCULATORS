@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="agediv">
+        <h1 id="h1">AGE CALCULATOR</h1>
+          <label for="">BirthYear:</label>
+          <input type="number" name="" id="birthyear"><br><br>
+          <label for="">CurrentYear:</label>
+          <input type="number" name="" id="currentyear"><br><br>
+          <button onclick="alert('welcome')">click</button>
+          <button onclick="displayage()">Calculate</button>
+          <p id="output"></p>
+  </div>
+</div>
+<script>
+  function displayage() {
+       birthyear = document.getElementById('birthyear').value;
+       currentyear = document.getElementById('currentyear').value;
+       age = currentyear - birthyear;
+      document.getElementById('output').innerHTML = "Your age is: " + age;
+  }
+</script>
+</body>
+</html>
